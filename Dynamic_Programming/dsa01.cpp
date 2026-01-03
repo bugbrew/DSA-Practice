@@ -6,6 +6,7 @@ int expand(string &s, int left, int right){
         left--;
         right++;
     }
+    
     return right - left - 1;
 }
 
