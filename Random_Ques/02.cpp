@@ -12,6 +12,7 @@ int romanInteger(string s){
         {'D',500},
         {'M',1000},
     };
+    
     int total = 0;
     for(int i=0; i < s.length(); i++){
         int current = roman[s[i]];
