@@ -8,9 +8,6 @@ int main(){
     int nums1[] = {1, 2, 2, 1};
     int nums2[] = {2, 2};
 
-    int n = sizeof(nums1) / sizeof(nums1[0]);
-    int m = sizeof(nums2) / sizeof(nums2[0]);
-
     unordered_set<int> s(begin(nums1), end(nums1));
     unordered_set<int> result;
 
