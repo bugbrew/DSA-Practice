@@ -1,0 +1,1 @@
+cout << nums[2] << endl;
