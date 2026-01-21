@@ -24,7 +24,6 @@ int findPeakElement(vector<int> &nums)
 int main()
 {
     vector<int> nums = {1, 2, 3, 1};
-
     int peakIndex = findPeakElement(nums);
 
     cout << "Peak index: " << peakIndex << endl;
