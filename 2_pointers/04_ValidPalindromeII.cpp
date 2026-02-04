@@ -27,8 +27,10 @@ bool validPalindrome(string s){
     return true;
 };
 int main(){
+
     string s;
     cin >> s;
     cout << validPalindrome(s) << " ";
+    
     return 0;
 }
