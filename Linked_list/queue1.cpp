@@ -32,6 +32,7 @@ public:
                 q1.push(front);
             }
         }
+        
         else{
             //Shift the element from q1 to q2
             while(!q1.empty()){
