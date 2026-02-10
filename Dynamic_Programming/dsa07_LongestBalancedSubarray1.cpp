@@ -1,0 +1,35 @@
+// 3719. Longest Balanced Subarray I
+#include<iostream>
+#include<vector>
+#include <unordered_set>
+using namespace std;
+
+int longestBalance(vector<int>& nums){
+    int maxLen = 0;
+    for (int i = 0; i < nums.size(); i++){
+        unordered_set<int> evenSet;
+        unordered_set<int> oddSet;
+
+        for (int j = i; j < nums.size(); j++){
+            if (nums[j] % 2 == 0)
+                evenSet.insert(nums[j]);
+            else
+                oddSet.insert(nums[j]);
+
+            if (evenSet.size() == oddSet.size()){
+                maxLen = max(maxLen, j - i + 1);
+            }
+        }
+    }
+    return maxLen;
+};
+
+int main(){
+
+    vector<int> nums = {1, 2, 3, 2};
+
+    cout << longestBalance(nums) << endl;
+
+
+    return 0;
+}
