@@ -30,6 +30,5 @@ int main(){
 
     cout << longestBalance(nums) << endl;
 
-
     return 0;
 }
