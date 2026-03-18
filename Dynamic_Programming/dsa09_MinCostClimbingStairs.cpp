@@ -19,7 +19,6 @@ int minCostClimbingStairs(vector<int> &cost)
         prev2 = prev1;
         prev1 = curr;
     }
-
     // Minimum cost to reach top (step n)
     return prev1;
 }
