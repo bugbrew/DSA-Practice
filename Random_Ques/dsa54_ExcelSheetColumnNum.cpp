@@ -19,3 +19,8 @@ int main()
     cout << titleToNumber("AB") << endl; // 28
     return 0;
 }
+
+// This is base conversion (base 26)
+// Very similar to :
+    // binary → decimal
+    // decimal → base - n
