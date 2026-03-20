@@ -7,13 +7,13 @@ int firstUniqChar(string s)
 {
     vector<int> count(26, 0);
 
-    // Step 1: Count frequency
+    // Step 1: Counting the frequency
     for (char c : s)
     {
         count[c - 'a']++;
     }
 
-    // Step 2: Find first unique character
+    // Step 2: Finding first unique character
     for (int i = 0; i < s.size(); i++)
     {
         if (count[s[i] - 'a'] == 1)
