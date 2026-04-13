@@ -3,7 +3,7 @@
 #include <unordered_set>
 using namespace std;
 
-// Definition for binary tree node
+// Defining binary tree node
 struct TreeNode
 {
     int val;
@@ -43,8 +43,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     /*
             5
            / \
@@ -52,7 +51,6 @@ int main()
          / \   \
         2   4   7
     */
-
     TreeNode *root = new TreeNode(5);
     root->left = new TreeNode(3);
     root->right = new TreeNode(6);
