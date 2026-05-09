@@ -3,8 +3,8 @@
 #include<iostream>
 #include<stack>
 #include<queue>
-using namespace std;
 
+using namespace std;
 
 class Stack{
     queue<int> q1,q2;
