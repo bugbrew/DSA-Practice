@@ -1,4 +1,5 @@
 // 747. Largest Number At Least Twice of Others
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -17,7 +18,6 @@ int dominantIndex(vector<int>& nums){
         }
     }
     return -1;
-
 }
 
 int main(){
