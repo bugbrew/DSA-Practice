@@ -22,8 +22,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     Solution sol;
 
     vector<int> nums = {-4, -1, 0, 3, 10};
@@ -31,8 +30,7 @@ int main()
     vector<int> result = sol.sortedSquares(nums);
 
     cout << "Sorted Squares: ";
-    for (int num : result)
-    {
+    for (int num : result){
         cout << num << " ";
     }
 
