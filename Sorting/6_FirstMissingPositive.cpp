@@ -4,24 +4,30 @@
 #include <algorithm>
 using namespace std;
 
-int firstMissingPositive(vector<int>& nums) {
+int firstMissingPositive(vector<int> &nums)
+{
+    
     sort(nums.begin(), nums.end());
 
     int missing = 1;
 
-    for (int i = 0; i < nums.size(); i++) {
+    for (int i = 0; i < nums.size(); i++)
+    {
         // Ignore negatives, zero, and smaller duplicates
-        if (nums[i] < missing) {
+        if (nums[i] < missing)
+        {
             continue;
         }
 
         // If found current missing number, look for next
-        if (nums[i] == missing) {
+        if (nums[i] == missing)
+        {
             missing++;
         }
 
         // If gap found
-        else if (nums[i] > missing) {
+        else if (nums[i] > missing)
+        {
             return missing;
         }
     }
@@ -29,7 +35,8 @@ int firstMissingPositive(vector<int>& nums) {
     return missing;
 }
 
-int main() {
+int main()
+{
     vector<int> nums = {3, 4, -1, 1};
 
     cout << "First Missing Positive: " << firstMissingPositive(nums) << endl;
