@@ -1,4 +1,5 @@
 // 977. Squares of a Sorted Array
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -15,9 +16,7 @@ public:
         {
             temp[i] = nums[i] * nums[i];
         }
-
         sort(temp.begin(), temp.end());
-
         return temp;
     }
 };
