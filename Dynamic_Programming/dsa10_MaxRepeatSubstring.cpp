@@ -17,8 +17,8 @@ int maxRepeating(string sequence, string word)
     return k;
 }
 
-int main()
-{
+int main(){
+
     string sequence, word;
 
     cout << "Enter sequence: ";
@@ -31,4 +31,5 @@ int main()
          << maxRepeating(sequence, word);
 
     return 0;
+    
 }
