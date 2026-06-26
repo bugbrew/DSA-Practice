@@ -1,9 +1,11 @@
 // Pascal's Triangle
+
 #include<iostream>
 #include<vector>
 using namespace std;
 
 int main(){
+    
     int rowIndex = 3;
 
     vector<vector<int>> prev;
