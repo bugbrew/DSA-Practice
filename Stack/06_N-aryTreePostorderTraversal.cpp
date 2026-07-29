@@ -26,7 +26,6 @@ public:
             dfs(child);
         }
 
-        // Visit the current node
         ans.push_back(root->val);
     }
 
@@ -37,6 +36,7 @@ public:
 };
 
 int main() {
+    
     // Creating the tree
     Node* root = new Node(1);
     Node* node3 = new Node(3);
