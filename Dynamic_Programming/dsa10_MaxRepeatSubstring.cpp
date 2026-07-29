@@ -1,4 +1,5 @@
 // 1668. Maximum Repeating Substring
+
 #include <iostream>
 #include <string>
 using namespace std;
