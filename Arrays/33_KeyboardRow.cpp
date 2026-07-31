@@ -5,19 +5,16 @@
 #include <cctype>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
-    vector<string> findWords(vector<string> &words)
-    {
+    vector<string> findWords(vector<string> &words){
         string row1 = "qwertyuiop";
         string row2 = "asdfghjkl";
         string row3 = "zxcvbnm";
 
         vector<string> ans;
 
-        for (string word : words)
-        {
+        for (string word : words){
             string lowerWord = word;
 
             for (char &ch : lowerWord)
@@ -27,32 +24,26 @@ public:
 
             string row;
 
-            if (row1.find(lowerWord[0]) != string::npos)
-            {
+            if (row1.find(lowerWord[0]) != string::npos){
                 row = row1;
             }
-            else if (row2.find(lowerWord[0]) != string::npos)
-            {
+            else if (row2.find(lowerWord[0]) != string::npos){
                 row = row2;
             }
-            else
-            {
+            else{
                 row = row3;
             }
 
             bool valid = true;
 
-            for (char ch : lowerWord)
-            {
-                if (row.find(ch) == string::npos)
-                {
+            for (char ch : lowerWord){
+                if (row.find(ch) == string::npos){
                     valid = false;
                     break;
                 }
             }
 
-            if (valid)
-            {
+            if (valid){
                 ans.push_back(word);
             }
         }
@@ -61,8 +52,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     vector<string> words = {"Hello", "Alaska", "Dad", "Peace"};
 
     Solution obj;
@@ -70,8 +60,7 @@ int main()
 
     cout << "Output: ";
 
-    for (string word : result)
-    {
+    for (string word : result){
         cout << word << " ";
     }
 
